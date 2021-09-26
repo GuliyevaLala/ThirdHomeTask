@@ -1,0 +1,41 @@
+using System;
+
+namespace En boyuk ededi tap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] numbers= { 56, 12, 805, 99, 4462, 8, -10 };
+
+            enBoyukEded(numbers);
+
+        }
+
+        static int enBoyukEded(int[] array)
+        {
+
+            int highest = 0;
+
+
+            for (int i = 0; i < array.Length; i++)
+            {
+
+                if (highest < array[i])
+                {
+
+                    highest = array[i];
+
+                }
+
+            }
+
+            Console.WriteLine(highest + "  En boyuk ededimizdir");
+            return highest;
+
+        }
+
+
+    }
+}

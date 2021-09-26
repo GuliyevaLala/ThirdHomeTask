@@ -1,0 +1,38 @@
+using System;
+
+namespace Is It Equal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] ededlerimiz = { 56, 89, 44, 13,45,800,27 };
+            int verilmishEded = 27;
+
+            isItEqual(ededlerimiz, verilmishEded);
+
+        }
+
+
+        static bool isItEqual(int[] array, int number)
+        {
+
+            bool yekunNetice = false;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+
+
+                if (number == array[i])
+                {
+                    yekunNetice = true;
+
+                    break;
+                }
+            }
+            Console.WriteLine("Emeliyyatin neticesi: " + yekunNetice);
+            return yekunNetice;
+        }
+    }
+}
